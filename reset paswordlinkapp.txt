@@ -1,0 +1,89 @@
+et it be !! suggest since reset password link is coming to mail how it will connect with current app ?
+
+Great question! Here’s a clear, professional explanation of how to connect the password reset link (sent via email) with your current mobile app:
+
+1. How the Reset Password Link Works
+When a user requests a password reset, your backend sends an email with a link like:
+CopyInsert
+https://yourapp.com/reset-password/<token>
+Clicking this link opens a web browser to that URL.
+2. How to Connect the Reset Link to Your Mobile App
+To make the reset link open your app’s Reset Password screen (instead of a browser), you need to implement deep linking (a.k.a. universal links or app links).
+
+A. Implement Deep Linking in Your App
+Configure Deep Linking in React Native:
+Use a package like @react-navigation/native's deep linking support.
+Register a Custom URL Scheme or Universal Link:
+For example: learnnow://reset-password/<token> or https://yourapp.com/reset-password/<token>
+Update your backend to send reset links using this scheme.
+Handle the Link in Your App:
+In your AppNavigator.js, configure the navigator to recognize the reset password path and route it to ResetPasswordScreen, passing the token as a parameter.
+Example Deep Linking Setup (React Navigation):
+js
+CopyInsert
+import { Linking } from 'react-native';
+
+const linking = {
+  prefixes: ['https://yourapp.com', 'learnnow://'],
+  config: {
+    screens: {
+      ResetPasswordScreen: 'reset-password/:token',
+      // ...other screens
+    },
+  },
+};
+
+// In your NavigationContainer:
+<NavigationContainer linking={linking}>
+  {/* ... */}
+</NavigationContainer>
+Now, when a user clicks the reset link, your app opens and navigates to the reset screen with the token.
+B. Backend: Update the Reset Link
+Change the reset link in your backend email to match your app’s deep link:
+js
+CopyInsert
+const resetLink = `https://yourapp.com/reset-password/${token}`;
+// OR
+const resetLink = `learnnow://reset-password/${token}`;
+3. Summary
+Deep linking lets your app handle special URLs and route users to the correct screen.
+Update your backend to send reset links using your app’s deep link scheme.
+Configure your app’s navigation to handle these links and extract the token for the reset password screen.
+If you want, I can provide exact code for your app and backend to implement this deep linking solution. Just let me know your preferred link format and platform (Android/iOS/both)!
+
+Feedback submitted
+
+
+
+Deep linking for password reset is now fully implemented in your app and backend:
+
+What’s Done
+Backend:
+The password reset email now sends a link in the format:
+learnnow://reset-password/<token>
+This is a deep link that will open your mobile app directly.
+App (React Native):
+Your AppNavigator.js is configured to handle the deep link:
+When a user clicks the reset link in their email, your app will open and route to the ResetPasswordScreen, passing the token as a parameter.
+Fixed all JSX and lint errors for proper navigation structure.
+How It Works for the User
+User requests a password reset.
+User receives an email with a link:
+learnnow://reset-password/<token>
+When the user clicks the link on their mobile device:
+The app opens (if installed).
+The user is taken directly to the Reset Password screen, with the token pre-filled for the reset flow.
+What You Should Do Next
+Test the flow:
+Request a password reset from your app.
+Open the email on your mobile device and click the link.
+Your app should open and show the Reset Password screen.
+If your app does not open:
+Make sure your app is installed.
+On Android/iOS, you may need to register the custom scheme (learnnow://) in your app’s native code for full support.
+For React Native, see:
+Android deep linking setup
+iOS deep linking setup
+Let me know if you want step-by-step native setup instructions for Android/iOS.
+If you want to support both app and web, you can send both links in the email.
+Let me know if you need full native deep linking setup or further customizations!

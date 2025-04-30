@@ -1,0 +1,91 @@
+GIT COMMANDS
+
+#git init 
+
+#git add .
+
+#git commit -m "FIRST STEP"
+
+#git remote add origin https://github.com/SHIV167/MERN_ECOMMERCE_BACKEND_VERCEL.git
+
+#git branch -m main
+
+#git push -f origin main
+
+
+git add render.yaml
+git commit -m "Fix envVar schema for Blueprint"
+git push
+
+
+
+EXPO COMMANDS
+
+#npx expo install expo-dev-client
+
+#npx expo customize metro.config.js
+
+#git remote set-url origin https://github.com/SHIV167/MERN_BLOGPORTFOLIO_FRONTEND.git
+#git push -u origin main
+
+
+
+
+#npm install -g eas-cli
+
+#eas login
+
+#eas build:configure
+
+#npx expo install expo-dev-client
+
+#eas build -p android --profile development
+
+
+
+echo "# MERN_ECOMMERCE_BACKEND_VERCEL" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/SHIV167/MERN_ECOMMERCE_BACKEND_VERCEL.git
+git push -u origin main
+
+
+
+git remote add origin https://github.com/SHIV167/MERN_ECOMMERCE_BACKEND_VERCEL.git
+git branch -M main
+git push -u origin main
+
+net stop MongoDB
+net start MongoDB
+services.msc
+
+netstat -ano | findstr :3000
+netstat -ano | findstr :8080
+taskkill /F /PID 12345
+
+
+
+#npx @react-native-community/cli init purenative
+#npx react-native run-android
+
+Use cross-env package:
+npm install --save-dev cross-env
+Then update your package.json start script to:
+"start": "cross-env NODE_ENV=production node dist/index.js"
+
+Or use the Windows command syntax:
+"start": "set NODE_ENV=production && node dist/index.js"
+
+Or run it directly with:
+set NODE_ENV=production && node dist/index.js
+
+
+
+netstat -ano | findstr :5000
+Stop-Process -Id <that‑PID> -Force
+
+
+
+npx tsx server/scripts/importStores.ts

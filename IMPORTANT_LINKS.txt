@@ -1,0 +1,102 @@
+https://www.w3schools.io/css/less-tutorials/
+
+https://www.hiddentechies.com/themes/free-magento-themes.html
+https://websensepro.com/blog/how-to-show-only-selected-variant-images-shopify-dawn-theme/
+
+
+
+1. git init (initialize git)
+2. git clone git@github.com:SHIV167/TEST_DESKTOP_GIT_SYNC.git  (clone git repository to local)
+3. git config user.email "jhashiv5@gmail.com"  git config user.name "SHIV167" (git auth connection before push command)
+4. git add . (add all files)
+5. git commit -m "changes made" (commit command for changes applied)
+5. git remote add origin git@github.com:SHIV167/TEST_DESKTOP_GIT_SYNC.git
+6. git push -u origin main (pushing file to git server)
+7. git pull git@github.com:SHIV167/TEST_DESKTOP_GIT_SYNC.git
+
+
+
+00:00 - Interview Round Content
+00:29 - How would you rate yourself in HTML, CSS & JS?
+00:42 - Q1: What are new tags in HTML5?
+00:51 - Candidate Q1 Answer
+00:58 - Expert Q1 answer
+01:26 - Q2: Should we Inject Div inside a Span tag? Will Html give an error?
+01:36 - Candidate Q2 Answer
+01:41 - Expert Q2 answer
+02:13 - Q3: How to make a website responsive using CSS?
+02:17 - Candidate Q3 Answer
+02:55 - Expert Q3 answer
+03:35 - Q4: 5 ways to center align an image inside a div element?
+03:44 - Candidate Q4 Answer
+04:25 - Expert Q4 answer
+04:42 - Q5: What to use px vs rem vs em?
+04:50 - Candidate Q5 Answer
+05:22 - Expert Q5 answer
+06:15 - Q6: Name all basic data types of Javascript?
+06:26 - Candidate Q6 Answer
+06:48 - Expert Q6 answer
+07:13 - Q7: What is Event Delegation & Event bubbling?
+07:19 - Candidate Q7 Answer
+07:48 - Expert Q7 answer
+08:37 - Q8: What are closures? Uses of Closures?
+08:42 - Candidate Q8 Answer
+09:02 - Expert Q8 answer
+10:07 - Q9: Find the output Problem 1
+10:12 - Candidate Q9 Answer
+10:47 - Expert Q9 answer
+13:04 - Q9 b: Find the output Problem 2
+13:13 - Candidate Q9 b Answer
+13:45 - Expert Q9 b answer
+15:15 - Q10: What is the need for JS Frameworks?
+15:35 - Candidate Q10 Answer
+16:10 - Expert Q10 answer
+17:45 - Q11: How do JS frameworks work in the background? 
+18:00 - Candidate Q11 Answer
+18:17 - Expert Q11 answer
+19:07 - Q12: Lifecycle Methods of React JS Components & Order?
+19:15 - Candidate Q12 Answer
+19:54 - Expert Q12 answer
+20:49 - Q13: Difference between Pure Components vs High Order Components? 
+21:00 - Candidate Q13 Answer
+21:24 - Expert Q13 answer
+22:11 - Q14: Difference between State vs Props vs Refs? 
+22:20 - Candidate Q14 Answer
+22:56 - Expert Q14 answer
+23:55 - Q15: What are the latest versions of Reactjs and new features? 
+24:00 - Candidate Q15 Answer
+24:50 - Expert Q15 answer
+25:15 - Q16: Difference between Class-based vs Function/hooks-based components? 
+25:28 - Candidate Q16 Answer
+25:50 - Expert Q16 answer
+26:49 - Q17: What are Fragments in ReactJs? 
+26:22 - Candidate Q17 Answer
+27:21 - Expert Q17 answer
+28:15 - Q18: How can you maintain the State of an app in complex applications?
+28:30 - Candidate Q18 Answer
+30:15 - Expert Q18 answer
+32:10 - Q19: Have you thought about implementing 2-way data binding?
+32:19 - Expert Q19 answer
+32:49 - Q20: What does async await get compiled into?
+33:05 - Candidate Q20 Answer
+33:13 - Expert Q20 answer
+34:24 - Q21: How to call 5 APIs in parallel and do something after all 5 responses have come?
+34:34 - Candidate Q21 Answer
+35:10 - Expert Q21 answer
+36:22 - Q22: Divide a website Ui into small components for JS framework.
+36:31 - Candidate Q22 Answer
+38:36 - Expert Q22 answer
+39:05 - Q23: What happens in the background when I enter a website URL in the browser and hit enter?
+41:00 - Expert Q23 answer 
+41:38 - DSA Question 1
+44:00 - DSA Question 2
+45:54 - DSA Question 3
+
+⭐ Useful Resources from the video:-
+1) HTML 5 tags ► https://www.tutorialspoint.com/html5/html5_tags.htm
+
+2) CSS Flexbox ► https://www.w3schools.com/css/css3_flexbox.asp
+
+3) 2-way data binding  ► https://bit.ly/3e9sJCk
+
+4) DSA question 3  ► https://leetcode.com/problems/longest-palindromic-substring/editorial/
